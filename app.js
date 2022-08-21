@@ -4,7 +4,7 @@ let bodyParser = require('body-parser');
 let cors = require('cors')
 let dotenv = require('dotenv');
 dotenv.config()
-let port = process.env.PORT || 9870;
+let PORT = process.env.PORT || 9870;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
 //let mongoUrl = process.env.MonogUrl;
@@ -186,9 +186,9 @@ app.delete('/deleteOrder/:id',(req,res) => {
 MongoClient.connect(mongoUrl,(err,client) => {
   if(err) console.log(`Error While Connecting`);
   db = client.db('FoodieBay');
-  app.listen(port,(err) => {
+  app.listen(PORT,(err) => {
     if(err) throw err;
-    console.log(`Express Server listening on port ${port}`)
+    console.log(`Express Server listening on port ${PORT}`)
   })
 })
 
