@@ -8,7 +8,7 @@ let PORT = process.env.PORT || 9870;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
 //let mongoUrl = process.env.MonogUrl;
-let mongoUrl = process.env.MonogLiveUrl;
+let mongoUrl = process.env.MongoLiveUrl;
 let db;
 
 //middleware (supporting lib)
