@@ -8,7 +8,7 @@ let port = process.env.PORT || 9870;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
 //let mongoUrl = process.env.MonogUrl;
-let mongoUrl = process.env.MonogUrl;
+let mongoUrl = process.env.MonogLiveUrl;
 let db;
 
 //middleware (supporting lib)
@@ -185,7 +185,7 @@ app.delete('/deleteOrder/:id',(req,res) => {
 //Connection with db
 MongoClient.connect(mongoUrl,(err,client) => {
   if(err) console.log(`Error While Connecting`);
-  db = client.db('internfeb');
+  db = client.db('FoodieBay');
   app.listen(port,(err) => {
     if(err) throw err;
     console.log(`Express Server listening on port ${port}`)
