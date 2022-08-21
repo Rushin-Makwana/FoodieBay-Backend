@@ -62,3 +62,10 @@
 ////////////////////////////////
 > Delete orders
 >>(Delete) localhost:9100/deleteOrder/628c485d93399d546c136d84
+
+
+https://foodiebay-backend.herokuapp.com/location
+https://foodiebay-backend.herokuapp.com/restaurants
+https://foodiebay-backend.herokuapp.com/mealType
+https://foodiebay-backend.herokuapp.com/filter/5
+https://foodiebay-backend.herokuapp.com/listing/2
