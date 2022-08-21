@@ -185,7 +185,7 @@ app.delete('/deleteOrder/:id',(req,res) => {
 //Connection with db
 MongoClient.connect(mongoUrl,(err,client) => {
   if(err) console.log(`Error While Connecting`);
-  db = client.db('FoodieBay');
+  db = client.db('Foodiebay');
   app.listen(PORT,(err) => {
     if(err) throw err;
     console.log(`Express Server listening on port ${PORT}`)
